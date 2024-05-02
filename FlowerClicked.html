@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flower Clicked</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/cards.css" rel="stylesheet" type="text/css" />
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<ul class="topnav">
+  <li><img src="images/logo.png" style="width: 75px; height: 75px;"></a></li>
+  <li class="right"><img src="images/basket.png" alt="Take a quiz"
+      style="width: 25px; height: 25px; padding-left: 20px;"></li>
+  <li class="right"><img src="images/personIcon.jpg" alt="Login" style="width: 25px; height: 25px; padding-left: 20px;">
+  </li>
+  <li class="right"><a href="help.html" style="padding-left: 20px;">Help</a></li>
+  <li class="right"><a class="active" href="FlowerClicked.html" style="padding-left: 20px;">Track Order</a></li>
+</ul>
+
+<body>
+
+
+  <div>
+    <img src="images/tempFlowers.png" alt="Flower Image" style="float:left; width:50%;">
+    <div style="float:right; width:50%">
+      <p>Flower Name</p>
+      <input type="date" id="flowerDate" style="width: 90%; text-align: center;">
+      <p>Purchasing Options</p>
+      <div style="text-align: center;">
+        <div style="text-align: center;">
+          <div style="background-color: #f2f2f2; border: 1px solid #e0e0e0; padding: 5px;">
+            <input type="radio" id="subscribe" name="subscription" value="subscribe">
+            <label for="subscribe" style="text-align: center;">Subscribe</label><br>
+            <p>Best Value: Up to 30% off + free shipping on subscription deliveries. <br>Flexible: Pick your flowers,
+              date & recipient every month, or set it & forget it <br>No
+              Obligations: Skip as often as you like. Cancel anytime.</p>
+          </div>
+          <input type="radio" id="dontSubscribe" name="subscription" value="dontSubscribe">
+          <label for="dontSubscribe" style="text-align: center;">One Time Purchase</label>
+
+          <br>
+
+          <input type="button" value="Add to Basket"
+            style="background-color: green; color: white; width: 100%; font-size: 1.2em;"
+            onclick="if((document.getElementById('subscribe').checked || document.getElementById('dontSubscribe').checked) && document.getElementById('flowerDate').value !== '') { window.location.href='delivery.html'; }">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
