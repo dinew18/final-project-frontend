@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Style for the custom radio buttons */
+input[type="radio"]+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+/* Style for the custom radio buttons when checked */
+input[type="radio"]:checked+label {
+  border-color: green;
+}
